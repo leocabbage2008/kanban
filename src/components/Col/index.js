@@ -9,12 +9,10 @@ export default function Col({
   prevHandler,
   subHandler,
 }) {
-  const [cont, setCont] = React.useState(content);
   return (
     <div className="col">
       <div className="header">{headerText}</div>
-      {cont.map((text) => {
-        const i = cont.indexOf(text);
+      {content.map((text) => {
         return (
           <Block
             text={text}
